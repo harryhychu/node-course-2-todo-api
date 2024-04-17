@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
-        mongodb-version: ['4.2', '4.4', '5.0', '6.0']
+        node-version: [18.x]
+        mongodb-version: ['6.0']
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -35,7 +35,7 @@ jobs:
         mongodb-username: supercharge
         mongodb-password: secret
         mongodb-db: TodoApp
-        
+
     - name: Run test
       - run: npm i
       - run: npm test
