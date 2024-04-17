@@ -35,7 +35,6 @@ jobs:
         mongodb-username: supercharge
         mongodb-password: secret
         mongodb-db: TodoApp
-
-    - name: Run test
-      - run: npm i
-      - run: npm test
+        
+    - run: npm i
+    - run: npm test
