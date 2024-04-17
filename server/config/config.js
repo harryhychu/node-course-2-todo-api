@@ -5,7 +5,7 @@ if(env === 'development' || env === 'test') {
 	var envConfig = config[env];
 	
 	Object.keys(envConfig).forEach((key) => {
-		console.log(key)
+		console.log(key, envConfig[key])
 		process.env[key] = envConfig[key];
 	});
 }
