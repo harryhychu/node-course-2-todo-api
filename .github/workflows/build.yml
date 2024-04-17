@@ -32,8 +32,6 @@ jobs:
       uses: supercharge/mongodb-github-action@1.10.0
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
-        mongodb-username: supercharge
-        mongodb-password: secret
         mongodb-db: TodoApp
         
     - run: npm i
